@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #f4f4f4;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #911F2C;
+    padding: 10px 40px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+    max-width: 180px; /* Prevents the logo from being too wide */
+  }
+  
+  /* Navigation styling */
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Hide the menu button on larger screens */
+  .menu-btn {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    color: white;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffd700;
+  }
+  
+  /* RESPONSIVE STYLES FOR SMALL SCREENS */
+  @media (max-width: 900px) {
+    /* Reduce logo size for mobile */
+    .logo img {
+        max-width: 140px;
+        height: 40px;
+    }
+  
+    /* Show menu button for small screens */
+    .menu-btn {
+        display: block;
+    }
+  
+    /* Hide nav links by default on mobile */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #911F2C;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 5px;
+    }
+  
+    /* Show nav links when menu is active */
+    .nav-links.active {
+        display: flex;
+    }
+  
+    .nav-links li {
+        padding: 10px;
+    }
+  }
+  
+  
+  .hero {
+    background: url('ai-bg.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 90px;
+  }
+  
+  
+  
+  
+  .hero h1 {
+    color:#911F2C;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+  }
+  
+  
+  .cta-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ffd700;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background: white;
+    color: black;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  
+  h2 {
+    color: #19315B;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .theme-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .theme-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .theme-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .theme-card h3 {
+    color: #19315B;
+    font-size: 18px;
+  }
+  
+  .theme-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .dates ul {
+    text-align: center;
+    list-style: none;
+  }
+  
+  .dates ul li {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  footer {
+    background: #19315B;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #19315B;
+        width: 200px;
+        text-align: right;
+        padding: 10px;
+    }
+  
+    .nav-links.show {
+        display: flex;
+    }
+  
+    .menu-btn {
+        display: block;
+    }
+  }
+  
