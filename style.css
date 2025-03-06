@@ -8,36 +8,77 @@
   body {
     background: #f4f4f4;
   }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #911F2C;
-    padding: 10px 40px;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-  }
-  
+
   .logo {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-around;
+   margin-top: 10px;
   }
-  
+
   .logo img {
-    height: 50px;
-    width: auto;
-    max-width: 180px; /* Prevents the logo from being too wide */
+    width: 270px;
+    height: auto;
+    gap:250px;
   }
-  
+
+  #iilmlogo{
+    height:24px;
+    width:auto;
+  }
+
+  #ann{
+    color:white;
+  }
+
+  .announcement {
+    left: 0;
+    width: 100%;
+    background:#911F2C;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    font-size: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Scrolling Animation */
+.announcement p {
+    display: inline-block;
+   color:white;
+    animation: marquee 7s linear infinite alternate;
+}
+
+/* Keyframes for Back-and-Forth Scrolling */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .announcement {
+        font-size: 14px; /* Slightly smaller text on mobile */
+        padding: 8px 0;
+    }
+}
+
   /* Navigation styling */
   nav {
     display: flex;
     align-items: center;
+    justify-content: center;
+    background: #19315B;
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
   /* Hide the menu button on larger screens */
@@ -52,6 +93,8 @@
   .nav-links {
     list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
   }
   
@@ -90,7 +133,8 @@
         width: 200px;
         text-align: center;
         padding: 10px 0;
-        border-radius: 5px;
+        border-radius: 15px;
+        border-color: black;
     }
   
     /* Show nav links when menu is active */
@@ -100,6 +144,8 @@
   
     .nav-links li {
         padding: 10px;
+        border-color: #000000;
+        border-radius: 15px;
     }
   }
   
@@ -121,14 +167,64 @@
   .hero h1 {
     color:#911F2C;
     font-size: 36px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
   }
   
   .hero p {
-    font-size: 18px;
+    font-size: 28px;
+    color:#19315B;
   }
+/* About Symposium Section */
+.hero-content h2:last-of-type {
+  text-align: left;
+  font-size: 32px;
+  color: #911F2C;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.hero-content p:last-of-type {
+  text-align: left;
+  font-size: 30px;
+  margin-left: 15px;
+  color: #19315B;
+  max-width: 80%; /* Keeps it readable on larger screens */
+  line-height: 1.6;
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 768px) {
+  .hero-content h2:last-of-type {
+      font-size: 28px;
+  }
+
+  .hero-content p:last-of-type {
+      font-size: 18px;
+      max-width: 100%; /* Makes it full-width on small screens */
+  }
+}
+#boutsymp {
+  font-size:18px;
+  margin-bottom: 20px;
+  margin-top:10px;
+  display: flex;
+text-align: justify;
   
+}
   
+
+.dates ul {
+  text-align: center;
+  list-style: none;
+}
+
+.dates ul li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+
+
   .cta-btn {
     display: inline-block;
     margin-top: 15px;
@@ -153,9 +249,9 @@
   }
   
   h2 {
-    color: #19315B;
+    color: #000000;
     text-align: center;
-    margin-bottom: 20px;
+
   }
   
   .about p {
@@ -195,15 +291,7 @@
     color: #555;
   }
   
-  .dates ul {
-    text-align: center;
-    list-style: none;
-  }
-  
-  .dates ul li {
-    font-size: 16px;
-    margin: 10px 0;
-  }
+
   
   footer {
     background: #19315B;
