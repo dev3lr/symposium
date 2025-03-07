@@ -258,19 +258,22 @@ nav {
 
 
   .important-dates {
-    text-align: center;
-   
     max-width: 80%;
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 60px auto;
+    padding: 60px;
+    background: #ffffff; /* White background for readability */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .important-dates h2 {
     color: #911F2C;
     font-size: 28px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .important-dates table {
@@ -436,3 +439,138 @@ nav {
       flex: 1 1 100%; /* Full width on small screens */
   }
 }
+
+/* Submission Guidelines Section */
+.submission-guidelines {
+  max-width: 80%;
+  margin: 50px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.submission-guidelines h2 {
+  font-size: 28px;
+  color: #911F2C;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.submission-guidelines ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.submission-guidelines li {
+  font-size: 18px;
+  color: #19315B;
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+/* Bullet Points with Custom Icon */
+.submission-guidelines li::before {
+  content: "•"; 
+  color: #911F2C;
+  font-size: 22px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .submission-guidelines {
+      max-width: 95%;
+      padding: 20px;
+  }
+
+  .submission-guidelines h2 {
+      font-size: 24px;
+  }
+
+  .submission-guidelines li {
+      font-size: 16px;
+  }
+}
+
+/* Registration Box */
+.registration-box {
+  max-width: 80%;
+  margin: 40px auto;
+  padding: 25px;
+  background: #911F2C; /* Deep Red - Matches Theme */
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  border-left: 6px solid #19315B; /* Dark Blue Left Border */
+  transition: 0.3s ease-in-out;
+}
+
+/* Title */
+.registration-box h3 {
+  font-size: 26px;
+  color:#19315B;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* Fee Details */
+.registration-box p {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Register Button */
+.register-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background:#19315B;
+  color: #911F2C;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.register-btn:hover {
+  background: white;
+  color: #19315B; /* Dark Blue */
+}
+
+/* Hover Effect */
+.registration-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .registration-box {
+      max-width: 95%;
+      padding: 20px;
+  }
+  
+  .registration-box h3 {
+      font-size: 22px;
+  }
+  
+  .registration-box p {
+      font-size: 16px;
+  }
+
+  .register-btn {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+}
+
+
