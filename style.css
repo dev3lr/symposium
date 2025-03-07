@@ -384,7 +384,7 @@ nav {
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
-  border-left: 5px solid black; /* Golden left border */
+  border-left: 5px solid #19315B; /* Golden left border */
   min-width: 300px;
 }
 
@@ -561,6 +561,7 @@ nav {
   
   .registration-box h3 {
       font-size: 22px;
+      color:black;
   }
   
   .registration-box p {
@@ -572,5 +573,169 @@ nav {
       padding: 10px 20px;
   }
 }
+
+
+/* Venue Section */
+.venue-section {
+  background:#911F2C;
+  border-left: 6px solid #19315B;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 90%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Venue Image */
+.venue-image-container {
+  height:290px;
+  width:auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top:10px;
+
+}
+
+.venue-image {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Venue Location */
+.venue-location {
+  font-size: 1.8rem;
+  font-weight: 600;
+  background:#911F2C;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Info Box */
+.iilm-info {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  line-height: 1.6;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.iilm-info h3 {
+  font-size: 2rem;
+  color:#19315B;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.iilm-info p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .venue-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color:#19315B;
+  }
+
+  .venue-image {
+      height:220px;
+      margin-top: 10px;
+  }
+
+  .venue-location {
+      font-size: 1.5rem;
+  }
+
+  .iilm-info {
+      max-width: 95%;
+      padding: 20px;
+  }
+
+  .iilm-info h3 {
+      font-size: 1.8rem;
+  }
+
+  .iilm-info p {
+      font-size: 1.1rem;
+  }
+}
+
+
+/* Syracuse University Section */
+.syracuse-section {
+  background:#19315B;
+  border-left: 6px solid #911F2C;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 90%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Syracuse University Image */
+.syracuse-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.syracuse-image {
+   width: auto;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Syracuse Info Box */
+.syracuse-info {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  line-height: 1.6;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.syracuse-info p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .syracuse-section h2 {
+      font-size: 2rem;
+  }
+
+  .syracuse-image {
+      max-width: 95%;
+  }
+
+  .syracuse-info {
+      max-width: 95%;
+      padding: 20px;
+  }
+
+  .syracuse-info p {
+      font-size: 1.1rem;
+  }
+}
+
+
 
 
