@@ -37,16 +37,26 @@ body {
   align-items: center;
   justify-content: space-around;
   margin-top: 30px;
+  flex-wrap: wrap; /* Allows logos to wrap instead of shrinking */
 }
 
 .logo img {
-  width: 270px;
-  height: auto;
+  width: 400px;
+  max-width: 100%; /* Prevents horizontal compression */
+  height: auto; /* Maintains aspect ratio */
 }
 
-#iilmlogo {
-  height: 24px;
-  width: auto;
+@media (max-width: 768px) {
+  #syralogo{
+   
+    max-width: 35%; /* Prevents horizontal compression */
+  height: 25px; /* Maintains aspect ratio */
+  }
+  #iilmlogo {
+   
+    max-width: 45%; /* Prevents horizontal compression */
+  height: 20px; /* Maintains aspect ratio */
+  }
 }
 
 /* Announcement Bar */
