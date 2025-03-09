@@ -19,7 +19,7 @@ body {
 }
 
 .hero {
-  min-height: 110vh; /* Fix: Ensures enough height */
+ height: auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -27,8 +27,7 @@ body {
   color: black;
   margin-top: 0;
   
-    min-height: 120vh; /* Prevents forcing full height */
- 
+   
 }
 
 /* Logo Styling */
@@ -67,7 +66,6 @@ body {
   margin-top: 10px;
   font-size: 8px;
   font-weight: bold;
-  text-transform: uppercase;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -170,8 +168,7 @@ nav {
 
 /* Hero Section */
 .hero {
-  background: url('ai-bg.jpg') no-repeat center center/cover;
-  height: 80vh;
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -270,6 +267,7 @@ nav {
   .important-dates {
     max-width: 80%;
     margin: 60px auto;
+    border-left: 5px solid #911F2C; /* Golden left border */
     padding: 60px;
     background: #ffffff; /* White background for readability */
     border-radius: 12px;
@@ -511,9 +509,9 @@ nav {
 
 /* Registration Box */
 .registration-box {
-  max-width: 80%;
+  max-width: 90%;
   margin: 40px auto;
-  padding: 25px;
+  padding: 50px;
   background: #911F2C; /* Deep Red - Matches Theme */
   color: white;
   text-align: center;
@@ -533,7 +531,7 @@ nav {
 
 /* Fee Details */
 .registration-box p {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   margin-bottom: 20px;
 }
@@ -571,7 +569,7 @@ nav {
   
   .registration-box h3 {
       font-size: 22px;
-      color:black;
+      color:#19315B;
   }
   
   .registration-box p {
@@ -634,7 +632,7 @@ nav {
   border-radius: 10px;
   text-align: left;
   line-height: 1.6;
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -659,7 +657,7 @@ nav {
   }
 
   .venue-image {
-      height:220px;
+      height:200px;
       margin-top: 10px;
   }
 
@@ -705,7 +703,7 @@ nav {
 
 .syracuse-image {
    width: auto;
-  height: 200px;
+  height: 250px;
   border-radius: 10px;
   margin-top: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -718,7 +716,7 @@ nav {
   border-radius: 10px;
   text-align: left;
   line-height: 1.6;
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -734,6 +732,7 @@ nav {
   }
 
   .syracuse-image {
+    height:200px;
       max-width: 95%;
   }
 
@@ -908,6 +907,77 @@ nav {
   }
 }
 
+
+
+#ann {
+  color:white;
+}
+
+
+
+.committees {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius:10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.committee-tabs {
+  display: flex;
+  justify-content:center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap:5px;
+}
+
+.tab-button {
+  background-color: #911F2C;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background-color:#19315B;
+}
+
+.committee-panels {
+  position: relative;
+}
+
+.committee-panel {
+  position: relative;
+  top: 0;
+  border-left: 6px solid #19315B;
+  border-radius: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  height:auto;
+  display: none;  /* Hidden by default */
+}
+
+.committee-panel.active {
+  display: block;
+}
+
+.committee-panel h2 {
+  margin-top: 10px;
+  color:#911F2C;
+  margin-bottom:5px;
+}
+
+
+
+
 /* Footer */
 .footer {
   background: #911F2C;
@@ -918,6 +988,8 @@ nav {
   font-weight: bold;
   margin-top: 30px;
 }
+
+
 
 
 
