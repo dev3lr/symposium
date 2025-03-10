@@ -651,6 +651,7 @@ nav {
 .iilm-info h3 {
   font-size: 2rem;
   color:#19315B;
+  text-align: left;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -768,7 +769,7 @@ nav {
 
 .keynote-section h2 {
   font-size: 2em;
-  color: #ffffff;
+  color: black;
   margin-bottom: 10px;
 }
 
