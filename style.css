@@ -44,6 +44,10 @@ body {
   max-width: 100%; /* Prevents horizontal compression */
   height: auto; /* Maintains aspect ratio */
 }
+#iilmlogo{
+  height:70px;
+  width:auto;
+  }
 
 @media (max-width: 768px) {
   #syralogo{
@@ -52,9 +56,10 @@ body {
   height: 25px; /* Maintains aspect ratio */
   }
   #iilmlogo {
-   
+
+
     max-width: 45%; /* Prevents horizontal compression */
-  height: 20px; /* Maintains aspect ratio */
+  height: 30px; /* Maintains aspect ratio */
   }
 }
 
