@@ -780,7 +780,9 @@ nav {
   align-items: center;
   gap: 20px;
 }
-
+#spik1{
+  height: 240px;
+}
 /* Keynote Panel Styling */
 .keynote-panel {
   background:#911F2C;
@@ -789,7 +791,7 @@ nav {
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.3);
   width: 90%;
-  max-width: 600px;
+  max-width: 900px;
 }
 
 .keynote-panel h3 {
@@ -808,7 +810,7 @@ nav {
   margin: 6px 0;
   border-radius: 5px;
   color: white;
-  font-weight: bold;
+  
 }
 
 /* Awards Panel Styling */
@@ -819,7 +821,7 @@ nav {
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.3);
   width: 90%;
-  max-width: 600px;
+  max-width: 900px;
 }
 
 .awards-panel h2 {
@@ -835,7 +837,8 @@ nav {
 
 /* Contact Section */
 .contact-section {
-  max-width: 80%;
+  max-width: 90%;
+  max-width: 900px;
   margin: 10px auto;
   padding: 30px;
   padding-bottom: 0px;
@@ -859,6 +862,7 @@ nav {
 .contact-card {
   background: #911F2C; /* Deep Red Background */
   padding: 20px;
+  max-width: 900px;
   border-radius: 12px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -876,7 +880,7 @@ nav {
   font-size: 22px;
   color: white;
   margin-bottom: 10px;
-  text-transform: uppercase;
+ 
 }
 
 /* Contact Info */
