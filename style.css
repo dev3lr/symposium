@@ -177,7 +177,7 @@ nav {
   margin-top: 90px;
 }
 
-.hero h1 {
+.hero h2 {
   color: #911F2C;
   font-size: 36px;
   margin-bottom: 1px;
@@ -222,6 +222,13 @@ nav {
 
 /* Responsive Fix for Mobile */
 @media (max-width: 768px) {
+
+  .hero p{
+    font-size:18px;
+  }
+  .hero h2{
+    font-size: 22px;
+  }
   .hero-content h2:last-of-type {
       font-size: 28px;
   }
@@ -509,7 +516,7 @@ nav {
 
 /* Registration Box */
 .registration-box {
-  max-width: 90%;
+  max-width: 100%;
   margin: 40px auto;
   padding: 50px;
   background: #911F2C; /* Deep Red - Matches Theme */
@@ -829,8 +836,9 @@ nav {
 /* Contact Section */
 .contact-section {
   max-width: 80%;
-  margin: 50px auto;
+  margin: 10px auto;
   padding: 30px;
+  padding-bottom: 0px;
   background: white;
   border-radius: 12px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -854,13 +862,13 @@ nav {
   border-radius: 12px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 300px;
+  
   padding-left: 50px;
   padding-right: 50px;
   margin: 0 auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-left: 5px solid #19315B; /* Dark Blue Left Border */
-  margin-bottom:120px;
+  margin-bottom:50px;
 }
 
 /* Contact Name */
