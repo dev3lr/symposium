@@ -29,3 +29,19 @@ tabButtons.forEach(button => {
         button.classList.add('active');
     });
 });
+
+
+
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 500) { // Show the button when scrolled down 500px
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top smoothly
+});
