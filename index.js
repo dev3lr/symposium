@@ -18,17 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 const tabButtons = document.querySelectorAll('.tab-button');
-const committeePanels = document.querySelectorAll('.committee-panel');
-
-tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const targetPanel = document.querySelector(button.dataset.tabTarget);
-        committeePanels.forEach(panel => panel.classList.remove('active'));
-        targetPanel.classList.add('active');
-        tabButtons.forEach(button => button.classList.remove('active'));
-        button.classList.add('active');
-    });
-});
 
 
 
