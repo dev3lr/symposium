@@ -26,8 +26,6 @@ body {
   text-align: center;
   color: black;
   margin-top: 0;
-  
-   
 }
 
 /* Logo Styling */
@@ -36,13 +34,13 @@ body {
   align-items: center;
   justify-content: space-around;
   margin-top: 30px;
-  flex-wrap: wrap; /* Allows logos to wrap instead of shrinking */
+  flex-wrap: wrap;
 }
 
 .logo img {
   width: 400px;
-  max-width: 100%; /* Prevents horizontal compression */
-  height: auto; /* Maintains aspect ratio */
+  max-width: 100%;
+  height: auto; 
 }
 #iilmlogo{
   height:70px;
@@ -112,7 +110,7 @@ nav {
   font-size: 28px;
   cursor: pointer;
   display: none;
-  color: white;
+  color:#19315B;
 }
 
 /* Navigation Links */
@@ -144,6 +142,7 @@ nav {
 
   .menu-btn {
       display: block;
+      color:white;
   }
 
   .nav-links {
@@ -885,7 +884,7 @@ nav {
 
 /* Contact Name */
 .contact-card h3 {
-  font-size: 22px;
+  font-size: 20px;
   color: rgb(0, 0, 0);
   margin-bottom: 10px;
  
@@ -894,6 +893,8 @@ nav {
 /* Contact Info */
 .contact-card p {
   font-size: 18px;
+  text-align: left;
+  padding-right:10px;
   color: #000000; /* Gold Accent */
 }
 
@@ -902,6 +903,9 @@ nav {
   
   text-decoration: none;
   font-weight: bold;
+  text-align: left;
+
+  font-size:18px;
 }
 
 .contact-card a:hover {
@@ -921,6 +925,10 @@ nav {
       max-width: 95%;
       padding: 20px;
   }
+  
+.contact-card a{
+  text-align: left;
+}
 
   .contact-card {
       width: 100%;
